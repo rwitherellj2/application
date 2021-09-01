@@ -2,7 +2,7 @@
 Class Application.Order Extends %Persistent
 {
 
-Property OrderDate2 As %Date;
+Property OrderDate As %Date;
 
 Property OrderTime As %Time;
 

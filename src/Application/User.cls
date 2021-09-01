@@ -1,7 +1,7 @@
 Class Application.User Extends (%Persistent, %Populate) [ Language = objectscript ]
 {
 
-Property Name2 As %String(MAXLEN = 255, POPORDER = 1) [ Required ];
+Property Name As %String(MAXLEN = 255, POPORDER = 1) [ Required ];
 
 Property Email As %String(MAXLEN = 255, POPORDER = 2, POPSPEC = ".PopulateEmail()") [ Required ];
 

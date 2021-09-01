@@ -6,8 +6,10 @@ ClassMethod PopulateUsers(pCount As %Integer) As %Status
 {
     #Dim tStatus As %Status
     Write "test"_pCount
-    Set tStatus = ##Class(Application.User).%DeleteExtent() $$$QuitOnError(tStatus) 
-    Set tStatus = ##Class(Application.User).Populate(pCount) $$$QuitOnError(tStatus)
+    Set tStatus = ##Class(Application.User).%DeleteExtent() 
+    $$$QuitOnError(tStatus) 
+    Set tStatus = ##Class(Application.User).Populate(pCount)
+    $$$QuitOnError(tStatus)
     Return $$$OK
 }
 

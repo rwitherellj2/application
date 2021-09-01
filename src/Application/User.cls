@@ -1,7 +1,7 @@
 Class Application.User Extends (%Persistent, %Populate) [ Language = objectscript ]
 {
 
-Property Name As %String(MAXLEN = 255, POPORDER = 1) [ Required ];
+Property Name2 As %String(MAXLEN = 255, POPORDER = 1) [ Required ];
 
 Property Email As %String(MAXLEN = 255, POPORDER = 2, POPSPEC = ".PopulateEmail()") [ Required ];
 
@@ -26,6 +26,9 @@ Storage Default
 </Value>
 <Value name="4">
 <Value>AnotherTestProps</Value>
+</Value>
+<Value name="5">
+<Value>Name2</Value>
 </Value>
 </Data>
 <DataLocation>^Application.UserD</DataLocation>

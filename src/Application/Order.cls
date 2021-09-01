@@ -2,7 +2,7 @@
 Class Application.Order Extends %Persistent
 {
 
-Property OrderDate As %Date;
+Property OrderDate2 As %Date;
 
 Property OrderTime As %Time;
 
@@ -27,6 +27,9 @@ Storage Default
 </Value>
 <Value name="5">
 <Value>User</Value>
+</Value>
+<Value name="6">
+<Value>OrderDate2</Value>
 </Value>
 </Data>
 <DataLocation>^Application.OrderD</DataLocation>

@@ -1,3 +1,4 @@
+/// Description
 Class Application.Utility [ Language = objectscript ]
 {
 

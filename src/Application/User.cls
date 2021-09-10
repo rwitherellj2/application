@@ -1,3 +1,4 @@
+/// Description
 Class Application.User Extends (%Persistent, %Populate) [ Language = objectscript ]
 {
 
@@ -5,11 +6,12 @@ Property Name As %String(MAXLEN = 255, POPORDER = 1) [ Required ];
 
 Property Email As %String(MAXLEN = 255, POPORDER = 2, POPSPEC = ".PopulateEmail()") [ Required ];
 
+/// Description
 Method PopulateEmail() As %String
 {
 	#Dim tFirstName = $Piece($Piece(..Name,",",2)," ",1)
 	#Dim tCompany = $Piece($Piece(##Class(%PopulateUtils).Company()," ",1),".",1)
-	Quit $ZConvert(tFirstName_"@"_tCompany_".com","L")
+	Return $ZConvert(tFirstName_"@"_tCompany_".com","L")
 }
 
 Storage Default
